@@ -1,25 +1,14 @@
 /* Takipçi kutucukları için düzenleme */
 .form-group {
-    margin: 10px 0;
-}
-
-.form-group label {
-    margin-left: 10px;
+    display: flex;
+    justify-content: space-evenly; /* Kutucuklar arasındaki boşluk eşit */
+    align-items: center; /* Dikeyde hizalama */
 }
 
 .form-group input[type="radio"] {
-    margin-right: 5px;
-    vertical-align: middle; /* Kutucuk ve yazıyı ortalar */
+    margin: 0 5px; /* Kutucuklar arasındaki yatay boşluk */
 }
 
-/* Kutucuklar ve yazıyı hizalamak için flexbox */
-.form-group {
-    display: flex;
-    align-items: center; /* Yatayda ve dikeyde hizalama */
-    justify-content: space-evenly; /* Aralarındaki boşluğu eşit yap */
-}
-
-.form-group input[type="radio"],
 .form-group label {
-    margin-right: 15px; /* Aralarındaki boşluk */
-}
+    margin: 0 10px; /* Yazılar ile kutucuklar arasındaki boşluk */
+    display: inline-block; /* Yazıların yat*
