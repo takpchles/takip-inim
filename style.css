@@ -1,14 +1,37 @@
-/* Takipçi kutucukları için düzenleme */
-.form-group {
+/* Sayfa genel düzeni */
+body {
+    font-family: Arial, sans-serif; /* Yazı tipi */
+    margin: 0;
+    padding: 0;
     display: flex;
-    justify-content: space-evenly; /* Kutucuklar arasındaki boşluk eşit */
-    align-items: center; /* Dikeyde hizalama */
+    justify-content: center; /* Sayfayı ortala */
+    align-items: center; /* Dikeyde ortala */
+    height: 100vh; /* Sayfa yüksekliği */
+    background-color: #f4f4f4; /* Arka plan rengi */
 }
 
-.form-group input[type="radio"] {
-    margin: 0 5px; /* Kutucuklar arasındaki yatay boşluk */
+/* Form grubu düzeni */
+.form-group {
+    text-align: center; /* Etiketlerin ortalanması */
+    margin-bottom: 20px;
 }
 
-.form-group label {
-    margin: 0 10px; /* Yazılar ile kutucuklar arasındaki boşluk */
-    display: inline-block; /* Yazıların yat*
+/* Takipçi seçenekleri kutucukları düzeni */
+.radio-group {
+    display: flex;
+    justify-content: center; /* Kutucukları yatayda ortala */
+    align-items: center; /* Kutucukları dikeyde ortala */
+    gap: 20px; /* Kutucuklar arasında boşluk */
+    margin-top: 10px;
+}
+
+.radio-group input[type="radio"] {
+    margin-right: 5px; /* Kutucuk ile yazı arasındaki boşluk */
+}
+
+.radio-group label {
+    font-size: 16px;
+    display: flex;
+    align-items: center; /* Yazıyı kutucuk ile hizala */
+    gap: 5px; /* Yazı ve kutucuk arasındaki boşluk */
+}
