@@ -1,6 +1,6 @@
 /* Sayfa genel düzeni */
 body {
-    font-family: Arial, sans-serif; /* Yazı tipi */
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     display: flex;
@@ -12,17 +12,16 @@ body {
 
 /* Form grubu düzeni */
 .form-group {
-    text-align: center; /* Etiketlerin ortalanması */
-    margin-bottom: 20px;
+    text-align: center; /* Etiketleri ortala */
+    margin-bottom: 20px; /* Alt boşluk */
 }
 
 /* Takipçi seçenekleri kutucukları düzeni */
 .radio-group {
     display: flex;
-    justify-content: center; /* Kutucukları yatayda ortala */
+    justify-content: space-evenly; /* Kutucuklar arasında eşit mesafe bırak */
     align-items: center; /* Kutucukları dikeyde ortala */
-    gap: 20px; /* Kutucuklar arasında boşluk */
-    margin-top: 10px;
+    margin-top: 10px; /* Üst boşluk */
 }
 
 .radio-group input[type="radio"] {
